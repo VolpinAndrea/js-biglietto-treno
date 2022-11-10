@@ -7,6 +7,8 @@ let eta = prompt("eta");
 
 console.log("Km: " + numerokm + " Età: "+ eta);
 
+
+
 let prezzo = numerokm * 0.21;
 
 console.log("Prezzo intero: "+ prezzo);
@@ -26,4 +28,8 @@ if (eta < 18){
 }else {
     console.log("eta non valida");
 
+}
+
+if (isNaN(prezzo)||isNaN(eta)){
+    console.log("qualcosa è andato storto, ricaricare la pagina")
 }
