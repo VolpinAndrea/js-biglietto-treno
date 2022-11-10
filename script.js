@@ -38,12 +38,18 @@ if (eta > 0 && eta < 18){
 
 }else {
     console.log("eta non valida");
+    let errore = document.getElementById("prezzo");
+
+    errore.classList.add("bg-danger")
+    document.getElementById("prezzo").innerHTML = "&#9888; qualcosa è andato storto, ricaricare la pagina";
+
 
 }
 
+// INUTILE
 if (isNaN(prezzo)||isNaN(eta)||numerokm<0){
     console.log("qualcosa è andato storto, ricaricare la pagina")
-    
+   
 }
 })
 
