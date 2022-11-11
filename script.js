@@ -19,21 +19,21 @@ if (eta > 0 && eta < 18){
     console.log("Sconto giovani: "+ prezzo.toFixed(2));
 
     document.getElementById("sconto").innerHTML = "Sconto giovani";
-    document.getElementById("prezzo").innerHTML = prezzo +" &euro;";
+    document.getElementById("prezzo").innerHTML = prezzo.toFixed(2) +" &euro;";
 
 } else if(eta > 65 && eta < 120){
     prezzo -= (prezzo*40)/100;
     console.log("Sconto anziani: "+ prezzo.toFixed(2)); 
 
     document.getElementById("sconto").innerHTML = "Sconto anziani";
-    document.getElementById("prezzo").innerHTML = prezzo +" &euro;";
+    document.getElementById("prezzo").innerHTML = prezzo.toFixed(2) +" &euro;";
 
 
 }else if(eta >= 18 && eta <= 65){
     console.log("prezzo intero: "+ prezzo.toFixed(2));
 
     document.getElementById("sconto").innerHTML = "Prezzo intero";
-    document.getElementById("prezzo").innerHTML = prezzo +" &euro;";
+    document.getElementById("prezzo").innerHTML = prezzo.toFixed(2) +" &euro;";
 
 
 }else {
